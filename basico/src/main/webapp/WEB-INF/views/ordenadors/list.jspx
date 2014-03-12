@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_es_indra_formacion_pr_springroo_basico_model_Ordenador" items="${ordenadors}" z="4xBe6kZ/UBWHcn/xmlGuRMU0YuQ=">
+        <table:table data="${ordenadors}" id="l_es_indra_formacion_pr_springroo_basico_model_Ordenador" path="/ordenadors" z="6WnVT66Vb0Z3MU+s4Sx+1EKdO7U=">
+            <table:column id="c_es_indra_formacion_pr_springroo_basico_model_Ordenador_nombre" property="nombre" z="7xWrdu3IDl2d14jW6z6c+vXZZYY="/>
+            <table:column id="c_es_indra_formacion_pr_springroo_basico_model_Ordenador_serial" property="serial" z="Ewd1XYm/P/lgl4RYDpMdDqRPmmM="/>
+            <table:column id="c_es_indra_formacion_pr_springroo_basico_model_Ordenador_persona" property="persona" z="ukK2QT0tDmQcGLZzpppoPWUkGPc="/>
+        </table:table>
+    </page:list>
+</div>

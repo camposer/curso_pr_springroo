@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_es_indra_formacion_pr_springroo_basico_model_Persona" object="${persona}" path="/personae" z="byrnSJiOys5HdYVylZxZ3TqQPXc=">
+        <field:display field="nombre" id="s_es_indra_formacion_pr_springroo_basico_model_Persona_nombre" object="${persona}" z="4ZHzzHPo74mn+ijdrK2GeLb1LhE="/>
+        <field:display field="apellido" id="s_es_indra_formacion_pr_springroo_basico_model_Persona_apellido" object="${persona}" z="PkpBsDltsGmT7uS0vudiKajWB24="/>
+        <field:display date="true" dateTimePattern="${persona_fechanacimiento_date_format}" field="fechaNacimiento" id="s_es_indra_formacion_pr_springroo_basico_model_Persona_fechaNacimiento" object="${persona}" z="5YYU67tcfoYYrivyrr1POmkP/UE="/>
+        <field:display field="altura" id="s_es_indra_formacion_pr_springroo_basico_model_Persona_altura" object="${persona}" z="P+YG916ZoS3E5Tdhz0pvAEWKXMU="/>
+    </page:show>
+</div>

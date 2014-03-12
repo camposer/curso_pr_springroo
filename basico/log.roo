@@ -1,0 +1,34 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-12 15:21:02
+// Creo el proyecto
+project --topLevelPackage es.indra.formacion.pr.springroo.basico
+// Configuración JPA
+jpa setup --provider HIBERNATE --database DERBY_CLIENT
+properties set --name database.properties --path SPRING_CONFIG_ROOT --key database.username --value user
+properties set --name database.properties --path SPRING_CONFIG_ROOT --key database.password --value 123
+// Creando la entidad Persona (con sus tests de integración automáticamente)
+entity jpa --class ~.model.Persona --testAutomatically 
+field string nombre --notNull 
+field string apellido --notNull 
+field date --fieldName fechaNacimiento --type java.util.Date 
+field number --fieldName altura --type java.lang.Float 
+// Creando la entidad Ordenador
+entity jpa --class ~.model.Ordenador --testAutomatically 
+field string nombre --notNull 
+field string serial --notNull 
+field reference --fieldName persona --type ~.model.Persona --cardinality MANY_TO_ONE
+// Cambiando el foco a la persona 
+focus --class ~.model.Persona
+field list --fieldName ordenadores --type ~.model.Ordenador --cardinality ONE_TO_MANY --mappedBy persona
+// Habilito el proyecto como de Spring MVC 
+web mvc setup
+web mvc all --package ~.web
+web mvc install language --code es
+// Antes de esto debemos validar que el proyecto compila satisfactoriamente
+// para lo que se puede salir del roo (exit) y ejecutar: mvn compile
+// por ejemplo: en nuestro caso fallaba al descargar el derby, lo descargamos
+// manualmente y lo colocamos en su carpeta correspondiente (caché de Maven)
+// Configurar eclipse
+perform eclipse
+
+exit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-03-12 17:10:58

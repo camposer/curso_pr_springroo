@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_ordenador" z="iZJF+Nnk7pMwei85GQ2WpUu8Pb0=">
+            <menu:item id="i_ordenador_new" messageCode="global_menu_new" url="/ordenadors?form" z="yTLKQjkYavSVjW4f3ueSZ07y1Hs="/>
+            <menu:item id="i_ordenador_list" messageCode="global_menu_list" url="/ordenadors?page=1&amp;size=${empty param.size ? 10 : param.size}" z="L9qc2C9lVgLpeKn1fVLpxDCWQ2E="/>
+        </menu:category>
+        <menu:category id="c_persona" z="HGx10uPnaEw3eOO50fIb9qf5jiI=">
+            <menu:item id="i_persona_new" messageCode="global_menu_new" url="/personae?form" z="7Y0KdFKrjpWljePDcf4RoDAeOUA="/>
+            <menu:item id="i_persona_list" messageCode="global_menu_list" url="/personae?page=1&amp;size=${empty param.size ? 10 : param.size}" z="/MWcaTHST1kjwDWGXluGyXbYCJo="/>
+        </menu:category>
+    </menu:menu>
+</div>

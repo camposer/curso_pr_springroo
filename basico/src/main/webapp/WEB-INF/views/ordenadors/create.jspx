@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_es_indra_formacion_pr_springroo_basico_model_Ordenador" modelAttribute="ordenador" path="/ordenadors" render="${empty dependencies}" z="2/U7YIOMUhQ6OsNA0X1tNKbN2FY=">
+        <field:input field="nombre" id="c_es_indra_formacion_pr_springroo_basico_model_Ordenador_nombre" required="true" z="3DFqZQNsFhnR9KnAetTnuTysXKE="/>
+        <field:input field="serial" id="c_es_indra_formacion_pr_springroo_basico_model_Ordenador_serial" required="true" z="9ZtZWdBMebQD02fS9aFYFGSzso4="/>
+        <field:input field="persona" id="c_es_indra_formacion_pr_springroo_basico_model_Ordenador_persona" z="pSU5YwRjNFKxjjltekT0BqfLmhk="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_es_indra_formacion_pr_springroo_basico_model_Ordenador" render="${not empty dependencies}" z="/wf3CY0xnWU9QJ++gBGQSGT9MLc="/>
+</div>

@@ -1,0 +1,13 @@
+<aspectj>
+<aspects>
+<aspect name="es.indra.formacion.pr.springroo.basico.model.PersonaIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="es.indra.formacion.pr.springroo.basico.model.PersonaDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="es.indra.formacion.pr.springroo.basico.model.OrdenadorDataOnDemand_Roo_Configurable"/>
+<aspect name="es.indra.formacion.pr.springroo.basico.model.OrdenadorIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="es.indra.formacion.pr.springroo.basico.model.PersonaDataOnDemand_Roo_Configurable"/>
+<aspect name="es.indra.formacion.pr.springroo.basico.model.OrdenadorDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="es.indra.formacion.pr.springroo.basico.model.PersonaIntegrationTest_Roo_Configurable"/>
+<aspect name="es.indra.formacion.pr.springroo.basico.model.OrdenadorIntegrationTest_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

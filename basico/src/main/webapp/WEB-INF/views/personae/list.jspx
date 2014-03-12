@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_es_indra_formacion_pr_springroo_basico_model_Persona" items="${personae}" z="z8W84G1XOO8NBFOJgdhIU/rN+08=">
+        <table:table data="${personae}" id="l_es_indra_formacion_pr_springroo_basico_model_Persona" path="/personae" z="nbT0XTxMh3TTfW0O6DzjdHyTfeI=">
+            <table:column id="c_es_indra_formacion_pr_springroo_basico_model_Persona_nombre" property="nombre" z="H5DGQnoMyL605VXg0fJ/UmHi5Dc="/>
+            <table:column id="c_es_indra_formacion_pr_springroo_basico_model_Persona_apellido" property="apellido" z="nS9ddpAnGkz7CGT/xCafLHUS/98="/>
+            <table:column date="true" dateTimePattern="${persona_fechanacimiento_date_format}" id="c_es_indra_formacion_pr_springroo_basico_model_Persona_fechaNacimiento" property="fechaNacimiento" z="Og801tN2ANxlb0y9A/0C3X57CqY="/>
+            <table:column id="c_es_indra_formacion_pr_springroo_basico_model_Persona_altura" property="altura" z="pq2DC4LTnQyfB2K+SALIv5dWjHk="/>
+        </table:table>
+    </page:list>
+</div>
